@@ -3,62 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title >ARYOSETO NITITIYOSO</title>
+    <title>ARYOSETO NITITIYOSO</title>
+    <style>
+      /* link color */
+      a:link,
+      a:visited {
+        color: #a93133;
+        padding: 5px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      a:hover,
+      a:active {
+        color: #D69E9B;
+      }
+
+      /* specific style for home link */
+      .home-link {
+        font-weight: bold;
+        font-size: larger;
+        color: #ff6347; /* tomato color */
+        position: absolute;
+        top: 10px;
+        left: 10px;
+      }
+
+      .home-link:hover,
+      .home-link:active {
+        color: #ff4500; /* orange red color */
+      }
+
+      /* responsive center */
+      .vertical-center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      /* responsive image */
+      .img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+    </style>
   </head>
-  <body class="vertical-center" style="text-align: center; background-color: black;">
+  <body style="text-align: center; background-color: black;">
+    <!-- link to home page -->
+    <a href="home.html" class="home-link">Home</a>
+
     <!-- name -->
-    <h1 style="font-style: italic; font-size: xxx-large; color: #a93133">
-      <b>ABOUT</b>
-    </h1>
+    <div class="vertical-center">
+      <h1 style="font-style: italic; font-size: xxx-large; color: #a93133">
+        <b>ABOUT</b>
+      </h1>
 
-    <!-- picture -->
-    <img
-      class="img"
-      src="/assets/u720SW,S720SW (117559).jpg"
-      alt="Cat in a dark dystopian future"
-      style="width: 30%; border-radius: 5px; -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(50%);"
-    />
-    <br />
-    <br />
-    <p style="color: #a93133;">Hi my name is Aryoseto, but you can call me Yose.</p>
-
-   
+      <!-- picture -->
+      <img
+        class="img"
+        src="/assets/u720SW,S720SW (117559).jpg"
+        alt="Cat in a dark dystopian future"
+        style="width: 30%; border-radius: 5px; -webkit-filter: grayscale(50%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(50%);"
+      />
+      <br />
+      <br />
+      <p style="color: #a93133;">Hi my name is Aryoseto, but you can call me Yose.</p>
+    </div>
   </body>
 </html>
-
-<style>
-  /* link color */
-  a:link,
-  a:visited {
-    color: #a93133;
-    padding: 5px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  a:hover,
-  a:active {
-    color: #D69E9B;
-  }
-
-  /* responsive center */
-  .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  /* responsive image */
-  .img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-</style>

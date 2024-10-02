@@ -1,73 +1,61 @@
 <!DOCTYPE html>
 <html lang="en-ID">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title >ARYOSETO NITITIYOSO</title>
-  </head>
-  <body class="vertical-center" style="text-align: center; background-color: black;">
-    <!-- name -->
-    <h1 style="font-style: italic; font-size: xxx-large; color: #a93133">
-      <b>ARYOSETO NITITIYOSO</b>
-    </h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARYOSETO NITITIYOSO</title>
+  <style>
+    body {
+      text-align: center;
+      background-color: black;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-    <!-- picture -->
-    <img
-      class="img"
-      src="/assets/dark-dystopian.jpg"
-      alt="Cat in a dark dystopian future"
-      style="width: 80%; border-radius: 5px"
-    />
-    <br />
-    <br />
+    h1 {
+      font-style: italic;
+      font-size: 3em;
+      color: #a93133;
+      margin: 0.5em 0;
+    }
 
-    <!-- desc -->
-    <p style="color: #a93133;">
-      <a href="about.html"><u>about</u></a>
-      //
-      <a href=""><u>faq</u></a>
-      //
-      <a href=""><u>blog</u></a>
-      //
-      <a href=""><u>resume</u></a>
-      //
-      <a href=""><u>contact</u></a>
-    </p>
-  </body>
+    img {
+      width: 80%;
+      max-width: 600px;
+      border-radius: 5px;
+      margin: 20px 0;
+    }
+
+    p {
+      color: #a93133;
+      margin: 1em 0;
+    }
+
+    a {
+      color: #a93133;
+      padding: 5px;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:active {
+      color: #D69E9B;
+    }
+  </style>
+</head>
+<body>
+  <h1><b>ARYOSETO NITITIYOSO</b></h1>
+  <img src="/assets/dark-dystopian.jpg" alt="Cat in a dark dystopian future">
+  <p>
+    <a href="about.html"><u>about</u></a> //
+    <a href="faq.html"><u>faq</u></a> //
+    <a href="#"><u>blog</u></a> //
+    <a href="resume.html"><u>resume</u></a> //
+    <a href="contact.html"><u>contact</u></a>
+  </p>
+</body>
 </html>
-
-<style>
-  /* link color */
-  a:link,
-  a:visited {
-    color: #a93133;
-    padding: 5px ;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-  }
-
-  a:hover,
-  a:active {
-    color: #D69E9B;
-  }
-
-  /* responsive center */
-  .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-
-  /* responsive image */
-  .img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-</style>
